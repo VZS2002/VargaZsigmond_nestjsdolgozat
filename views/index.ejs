@@ -9,14 +9,17 @@
     <script src='main.js'></script>
 </head>
 <body>
-  
+
+
+
  <div class="kozep">
-  <form>
-    
-    <input id="kereso" type="text" placeholder="Keresett szem színe">
-    
+  <form method="GET" >
+   
+    <input type="text" name="szemszin" placeholder="Keresett szem színe">
+
+    <input type="submit" id="keres" value="Keresés">
   </form>
-  <button>Keresés</button>
+ 
 </div>
   <div class="jobb">
   <table>
@@ -43,6 +46,9 @@
 
     
   </table>
+  
+
 </div>
-</body>
+<a href="cats/new">Macska felvétele</a>
+</body> 
 </html>

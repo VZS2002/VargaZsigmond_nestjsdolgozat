@@ -9,28 +9,40 @@
     <script src='main.js'></script>
 </head>
 <body>
+  
+ <div class="kozep">
+  <form>
+    
+    <input id="kereso" type="text" placeholder="Keresett szem színe">
+    
+  </form>
+  <button>Keresés</button>
+</div>
+  <div class="jobb">
   <table>
 
-    
     <tr>
-         <td>
+         <th>
           Súly
-        </td>
+        </th>
 
-         <td>
+         <th class="asd">
           Szem szín
-        </td>
+        </th>
     </tr>
-
+<hr width="40%">
       <% for (let x of macskak) {%> 
+        
          <tr>
                 <td> <%= x.suly %></td>
-                <td> <%= x.szem_szin %></td>
+                
+                <td class="asd"> <%= x.szem_szin %></td>
+              
          </tr>
       <% } %> 
 
     
   </table>
-
+</div>
 </body>
 </html>
